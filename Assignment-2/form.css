@@ -1,0 +1,14 @@
+body{
+    background-color: blueviolet;
+    color: white;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+}
+form>h1{
+    color: blueviolet;
+    height: 60px;
+    background-color: white;
+}
