@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+</head>
+
+<body>
+
+  <h1><u>Contact Me</u></h1>
+
+  <p>
+    <button><a href="index.html">Home</a></button> |
+    <button><a href="hobbies.html">Hobbies</a></button> |
+    <button><a href="contact.html">Contact</a></button>
+  </p>
+
+  <hr>
+
+  <h2>Contact Details</h2>
+  <ul>
+    <li><b>Email:</b> salmansheikh2500@gmail.com</li>
+    <li><b>Phone:</b> 0334-4870484</li>
+    <li><b>Address:</b> Lahore, Pakistan</li>
+  </ul>
+
+  <h2>Send a Message</h2>
+  <form>
+    <table>
+      <tr>
+        <td><label>Full Name:</label></td>
+        <td><input type="text" name="fullname" required></td>
+      </tr>
+      <tr>
+        <td><label>Email:</label></td>
+        <td><input type="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td><label>Phone:</label></td>
+        <td><input type="tel" name="phone"></td>
+      </tr>
+      <tr>
+        <td><label>Gender:</label></td>
+        <td>
+          Male <input type="radio" name="gender" value="male">
+          Female <input type="radio" name="gender" value="female">
+        </td>
+      </tr>
+      <tr>
+        <td><label>Reason for Contact:</label></td>
+        <td>
+          <select name="reason">
+            <option value="general">General Inquiry</option>
+            <option value="hire">Hiring</option>
+            <option value="feedback">Feedback</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Message:</label></td>
+        <td><textarea name="message" rows="5" cols="30"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="checkbox" name="subscribe" id="subscribe">
+          <label for="subscribe">Subscribe to Newsletter</label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <br>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <hr>
+
+  <p><b>Footer:</b> © 2026 - Salman Ahmad</p>
+
+</body>
+
+</html>
