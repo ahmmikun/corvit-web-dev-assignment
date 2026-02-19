@@ -1,0 +1,73 @@
+.flag1 {
+  width: 800px;
+  height: 600px;
+  border: 1px solid black;
+}
+
+.part {
+  height: 200px;
+  width: 800px;
+}
+
+.red {
+  background: red;
+}
+
+.white {
+  background: white;
+}
+
+
+.flag2 {
+  width: 800px;
+  height: 600px;
+  border: 1px solid black;
+}
+
+.part2 {
+  width: 800px;
+  height: 200px;   
+}
+
+.blue {
+  background: blue;
+}
+
+.black {
+  background: black;
+}
+
+.white {
+  background: white;
+}
+
+.flag3 {
+  width: 600px;
+  height: 400px;
+  border: 1px solid black;
+}
+
+.part3 {
+  width: 200px;     
+  height: 400px;
+  float: left;    
+}
+
+.blue {
+  background: blue;
+}
+
+.white {
+  background: white;
+}
+
+.red {
+  background: red;
+}
+
+
+
+
+
+
+
