@@ -23,11 +23,34 @@ body {
 .cell {
   width: 12.5%;
   height: 12.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
 }
 
 .white {
   background: #fff;
 }
+
 .black {
   background: #000000;
+}
+
+
+.piece {
+  user-select: none;
+  line-height: 1;
+}
+
+
+.white .piece {
+  color: #000;
+  text-shadow: 0 0 6px #fff, 0 0 12px #fff;
+}
+
+
+.black .piece {
+  color: #fff;
+  text-shadow: 0 0 6px #000, 0 0 12px #000;
 }
