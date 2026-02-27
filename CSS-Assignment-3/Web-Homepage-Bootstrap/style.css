@@ -1,0 +1,59 @@
+.bg-page {
+  background: #efefef;
+}
+
+.logo {
+  width: 40px;
+}
+
+.nav-link-custom {
+  color: #111;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.search-wrap {
+  max-width: 520px;
+}
+
+.search-pill {
+  border: none;
+  border-radius: 999px;
+  background: #ececec;
+  padding: 12px 18px;
+  font-size: 18px;
+}
+
+.search-pill:focus {
+  box-shadow: none;
+  background: #ececec;
+}
+
+.btn-pill {
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.hero {
+  min-height: calc(100vh - 90px);
+  gap: 20px;
+}
+
+.hero-img {
+  width: 120px;
+}
+
+.hero-title {
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.install-pill {
+  background: #e5e5e5;
+  border-radius: 14px;
+  padding: 14px 22px;
+  font-size: clamp(14px, 1.8vw, 24px);
+}
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-CSS Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-card a {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        .project-card a:hover {
+            color: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML-CSS Projects</h1>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Card Profile</h3>
+                <p>Profile card component</p>
+                <a href="CARD-PROFILE/index.html">View Project →</a>
+            </div>
+            <div class="project-card">
+                <h3>Contact Form</h3>
+                <p>Contact form design</p>
+                <a href="CONTACT-FORM/index.html">View Project →</a>
+            </div>
+            <div class="project-card">
+                <h3>Credit Card</h3>
+                <p>Credit card UI</p>
+                <a href="CREDIT-CARD/index.html">View Project →</a>
+            </div>
+            <div class="project-card">
+                <h3>CSS Loader</h3>
+                <p>Animated loader</p>
+                <a href="CSS-LOADER/index.html">View Project →</a>
+            </div>
+            <div class="project-card">
+                <h3>Flip Card</h3>
+                <p>Flip animation card</p>
+                <a href="FLIP-CARD/index.html">View Project →</a>
+            </div>
+            <div class="project-card">
+                <h3>Gradient Text</h3>
+                <p>Gradient text effect</p>
+                <a href="GRADIENT-TEXT/index.html">View Project →</a>
+            </div>
+            <div class="project-card">
+                <h3>Keyboard Design</h3>
+                <p>Keyboard layout design</p>
+                <a href="KEYBOARD-DESIGN/index.html">View Project →</a>
+            </div>
+            <div class="project-card">
+                <h3>Search Box</h3>
+                <p>Search box component</p>
+                <a href="SEARCH-BOX/index.htm">View Project →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
