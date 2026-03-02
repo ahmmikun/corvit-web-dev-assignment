@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Thermostat</title>
+</head>
+
+<body>
+
+    <script>
+
+        let currentTemp = +prompt("Enter current room temperature:");
+        let targetTemp = +prompt("Enter target temperature:");
+
+        let acAnswer = prompt("Is AC compressor running? (yes/no)");
+        let isACRunning = acAnswer === "yes";
+
+        let ecoAnswer = prompt("Is Eco Mode ON? (yes/no)");
+        let isEcoMode = ecoAnswer === "yes";
+
+        alert("Current Temperature: " + currentTemp);
+        alert("Target Temperature: " + targetTemp);
+        alert("AC Running: " + isACRunning);
+        alert("Eco Mode: " + isEcoMode);
+
+
+        currentTemp = 74;
+
+        alert("Room got hotter!");
+        alert("Updated Current Temperature: " + currentTemp);
+
+    </script>
+
+
+
+</body>
+
+</html>

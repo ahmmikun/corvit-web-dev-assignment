@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Character</title>
+</head>
+<body>
+    
+    <script>
+
+    
+    const maxHealth = 1000;
+    let currentHealth = +prompt("Enter current health points:");
+    let shieldAnswer = prompt("Is shield activated? type either yes or no");
+    let isShieldActive = shieldAnswer === "yes";
+    let poisonAnswer = prompt("Is character poisoned? type either yes or no");
+    let isPoisoned = poisonAnswer === "yes";
+
+    alert("Max Health: " + maxHealth);
+    alert("Current Health: " + currentHealth);
+    alert("Shield Active: " + isShieldActive);
+    alert("Poisoned: " + isPoisoned);
+
+    
+    let incomingAttack = +prompt("Enter incoming attack damage:");
+    currentHealth = currentHealth - incomingAttack;
+
+    alert("Damage Taken: " + incomingAttack);
+    alert("Updated Health: " + currentHealth);
+
+</script>
+</body>
+</html>
