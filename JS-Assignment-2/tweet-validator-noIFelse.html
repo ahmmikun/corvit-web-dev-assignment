@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tweet Checker</title>
+</head>
+<body>
+
+<script>
+  let tweet = prompt("Enter your tweet:");
+  let length = tweet.length;
+
+  if (length <= 140) {
+    alert(`That ${length} char tweet will work!`);
+  } else {
+    let extra = length - 140;
+    alert(`Your ${length} char tweet is ${extra} chars too long`);
+  }
+</script>
+
+</body>
+</html>
