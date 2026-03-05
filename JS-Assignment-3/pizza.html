@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop</title>
+</head>
+<body>
+    <script>
+        alert("Welcome to our pizza shop!");
+        let order = prompt("Which Pizza you want to order S,M,L?");
+        if (order === "S"){
+            let smallPizzaPrice = 15;
+            let smallPepperoni = prompt("Do you want to add pepperoni for small pizza? Y/N");
+            if (smallPepperoni === "Y"){
+                smallPizzaPrice += 2;
+            }   
+            let smallExtraCheese = prompt("Do you want to add extra cheese for small pizza? Y/N");
+            if (smallExtraCheese === "Y"){
+                smallPizzaPrice += 1;
+            }
+            alert("Your total bill is: " + smallPizzaPrice);
+            
+        }
+        else if (order === "M"){
+            let mediumPizzaPrice = 20;
+            let mediumPepperoni = prompt("Do you want to add pepperoni for medium pizza? Y/N");
+            if (mediumPepperoni === "Y"){
+                mediumPizzaPrice += 3;
+            }   
+            let mediumExtraCheese = prompt("Do you want to add extra cheese for medium pizza? Y/N");
+            if (mediumExtraCheese === "Y"){
+                mediumPizzaPrice += 1;
+            }
+            alert("Your total bill is: " + mediumPizzaPrice);
+        }
+        else if (order === "L"){
+            let largePizzaPrice = 25;
+            let largePepperoni = prompt("Do you want to add pepperoni for large pizza? Y/N");
+            if (largePepperoni === "Y"){
+                largePizzaPrice += 3;
+            }   
+            let largeExtraCheese = prompt("Do you want to add extra cheese for large pizza? Y/N");
+            if (largeExtraCheese === "Y"){
+                largePizzaPrice += 1;
+            }
+            alert("Your total bill is: " + largePizzaPrice);
+        }
+    </script>
+</body>
+</html>
