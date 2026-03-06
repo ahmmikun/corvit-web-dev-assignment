@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Vowel Check</title>
+</head>
+<body>
+    <script>
+        const alphabet = prompt("Enter an alphabet:").toLowerCase();
+        const vowels = ['a', 'e', 'i', 'o', 'u'];
+        if (vowels.includes(alphabet)) {
+            alert(`${alphabet} is a vowel.`);
+        } else {
+            alert(`${alphabet} is a consonant.`);
+        }
+    </script>
+</body>
+</html>
