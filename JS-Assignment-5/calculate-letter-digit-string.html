@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculate Letters and Digits</title>
+</head>
+
+<body>
+
+<script>
+
+let str = prompt("Enter a string:");
+let letterCount = 0;
+let digitCount = 0;
+
+for (let i = 0; i < str.length; i++) {
+
+    let char = str.charAt(i);
+
+    if ((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z')) {
+        letterCount++;
+    }
+    else if (char >= '0' && char <= '9') {
+        digitCount++;
+    }
+
+}
+
+alert(`Number of letters: ${letterCount}\nNumber of digits: ${digitCount}`);
+
+</script>
+
+</body>
+</html>

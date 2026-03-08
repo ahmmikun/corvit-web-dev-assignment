@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Guess</title>
+</head>
+<body>
+    
+
+    <script>
+        const randomNumber = Math.floor(Math.random() * 9) + 1;
+        let guess = +prompt("Guess a number between 1 and 9:");
+        while(true)
+    {
+        if (guess >= 1 && guess <=4)
+        {
+            alert("Too low! Try again.");
+        }
+        else if (guess >= 6 && guess <= 9)
+        {
+            alert("Too high! Try again.");
+        }
+        else if (guess === randomNumber)
+        {
+            alert("Congratulations! You guessed the number!");
+            break;
+        }
+        else
+        {
+            alert("Invalid input! Please enter a number between 1 and 9.");
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concat objects</title>
+</head>
+<body>
+    
+    <script>
+        let obj1 = {
+            1:10,
+            2:20
+        }
+        let obj2 = {
+            3:30,
+            4:40
+        }
+        let obj3 = {
+            5:50,
+            6:60
+        }
+        let concatObj = Object.assign({}, obj1, obj2, obj3);
+        alert(JSON.stringify(concatObj));
+    </script>
+</body>
+</html>
