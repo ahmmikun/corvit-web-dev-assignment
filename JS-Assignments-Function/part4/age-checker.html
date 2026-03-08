@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Checker</title>
+</head>
+
+<body>
+
+    <script>
+        function checkAge() {
+            let name = prompt("Please enter your name:");
+            let age = parseInt(prompt("Please enter your age:"));
+            let derivedAge = 100 - age;
+            alert("Your age after 100 years will be: " + derivedAge);
+            let answer = 2026 + derivedAge;
+            alert(`${name}, you will turn 100 years old in the year ${answer}.`);
+        }
+        checkAge();
+    </script>
+</body>
+
+</html>

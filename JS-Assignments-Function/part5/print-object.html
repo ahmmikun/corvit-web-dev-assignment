@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print object</title>
+</head>
+
+<body>
+
+    <script>
+        function printObjects() {
+            for (let i = 0; i < 15; i++) {
+                let obj = {
+                    name: `Object ${i + 1}`,
+                    value: i * i
+                };
+                alert(JSON.stringify(obj));
+            }
+        }
+        printObjects();
+    </script>
+</body>
+
+</html>

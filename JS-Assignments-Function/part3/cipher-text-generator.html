@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher Text Generator</title>
+</head>
+
+<body>
+    <script>
+        function generateCipherText() {
+            let text = prompt("Enter your message:");
+            let result = "";
+            for (let i = 0; i < text.length; i++) {
+                if (text[i] === " ") {
+                    result += " ";
+                }
+                else {
+                    //ascci ma convert krna ka baad 3 se subtract krna
+                    result = result + String.fromCharCode(text.charCodeAt(i) - 3);
+                }
+            }
+            alert("Encrypted text: " + result);
+        }
+        generateCipherText();
+    </script>
+</body>
+
+</html>

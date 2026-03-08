@@ -6,15 +6,17 @@
 <body>
 
 <script>
-  let tweet = prompt("Enter your tweet:");
-  let length = tweet.length;
 
-  if (length <= 140) {
-    alert(`That ${length} char tweet will work!`);
-  } else {
-    let extra = length - 140;
-    alert(`Your ${length} char tweet is ${extra} chars too long`);
-  }
+let tweet = prompt("Enter your tweet:");
+let length = tweet.length;
+
+let remaining = 140 - length;
+let extra = length - 140;
+
+alert("Tweet length: " + length);
+alert("Characters remaining: " + remaining);
+alert("Characters over limit: " + extra);
+
 </script>
 
 </body>

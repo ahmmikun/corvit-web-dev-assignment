@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequency in Array</title>
+</head>
+
+<body>
+
+    <script>
+        function findFrequency() {
+            let myList = [10, 10, 10, 10, 20, 20, 20, 20, 40, 40, 50, 50, 30];
+            let frequency = {};
+            for (let i = 0; i < myList.length; i++) {
+                let item = myList[i];
+                if (frequency[item]) {
+                    frequency[item] = frequency[item] + 1;
+                }
+                else {
+                    frequency[item] = 1;
+                }
+            }
+            alert(JSON.stringify(frequency));
+        }
+        findFrequency();
+    </script>
+</body>
+
+</html>

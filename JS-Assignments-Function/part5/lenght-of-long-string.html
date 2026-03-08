@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenght of Longest substring</title>
+</head>
+
+<body>
+
+    <script>
+        function findLongestSubstringLength() {
+            let str = prompt("Enter a string:");
+            let current = "";
+            let maxLength = 0;
+            for (let i = 0; i < str.length; i++) {
+                let ch = str[i];
+                while (current.includes(ch)) {
+                    current = current.slice(1);
+                }
+                current = current + ch;
+                if (current.length > maxLength) {
+                    maxLength = current.length;
+                }
+            }
+            alert("Length of longest substring without repeating characters is: " + maxLength);
+        }
+        findLongestSubstringLength();
+    </script>
+</body>
+
+</html>

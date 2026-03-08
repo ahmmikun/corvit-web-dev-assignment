@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tweet Checker</title>
+</head>
+
+<body>
+
+    <script>
+        function validateTweetNoIf() {
+            let tweet = prompt("Enter your tweet:");
+            let length = tweet.length;
+
+            let remaining = 140 - length;
+            let extra = length - 140;
+
+            alert("Tweet length: " + length);
+            alert("Characters remaining: " + remaining);
+            alert("Characters over limit: " + extra);
+        }
+        validateTweetNoIf();
+    </script>
+
+</body>
+
+</html>

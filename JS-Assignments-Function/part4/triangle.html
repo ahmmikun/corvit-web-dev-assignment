@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Check</title>
+</head>
+
+<body>
+
+    <script>
+        function checkTriangleValid() {
+            let side1 = parseFloat(prompt("Enter the length of the first side of the triangle:"));
+            let side2 = parseFloat(prompt("Enter the length of the second side of the triangle:"));
+            let side3 = parseFloat(prompt("Enter the length of the third side of the triangle:"));
+
+            if (side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1) {
+                alert("The given sides can form a triangle.");
+            } else {
+                alert("The given sides cannot form a triangle.");
+            }
+        }
+        checkTriangleValid();
+    </script>
+</body>
+
+</html>
