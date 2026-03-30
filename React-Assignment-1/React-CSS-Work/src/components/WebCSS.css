@@ -1,0 +1,104 @@
+.web-homepage-css-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.web-homepage-css-page {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #efefef;
+  color: #111;
+}
+
+.whc-header {
+  background: #fff;
+  padding: 14px 24px;
+}
+
+.whc-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.ollama-logo {
+  width: 40px;
+}
+
+.whc-nav a {
+  color: #111;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.search-item {
+  margin-left: auto;
+}
+
+.whc-nav input {
+  width: 420px;
+  max-width: 40vw;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 999px;
+  background: #ececec;
+  font-size: 18px;
+}
+
+.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 22px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn-light {
+  background: #efefef;
+}
+
+.btn-dark {
+  background: #222;
+  color: #fff;
+}
+
+.whc-main {
+  min-height: calc(100vh - 80px);
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 28px;
+  text-align: center;
+  padding: 24px;
+}
+
+.main-image {
+  width: 120px;
+}
+
+.whc-main h1 {
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1.1;
+}
+
+.whc-main code {
+  background: #e5e5e5;
+  border-radius: 14px;
+  padding: 14px 22px;
+  font-size: clamp(14px, 1.8vw, 26px);
+}
+
+@media (max-width: 900px) {
+  .search-item {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .whc-nav input {
+    width: 100%;
+    max-width: 100%;
+  }
+}

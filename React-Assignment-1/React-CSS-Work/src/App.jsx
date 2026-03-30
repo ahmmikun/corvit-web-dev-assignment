@@ -6,11 +6,13 @@ import RegistrationForm from "./components/RegistrationForm";
 import Flags from "./components/Flags";
 import ChessBoard from "./components/ChessBoard";
 import Ludo from "./components/Ludo";
+import WebCSS from "./components/WebCSS";
 import "./App.css";
 
 export default function App() {
   return (
     <div className="app">
+
       <h1>Resume Assignment</h1>
       <Resume />
       <Hobbies />
@@ -27,7 +29,12 @@ export default function App() {
       <h1>Ludo Board Assignment</h1>
       <Ludo />
       <hr />
-      
+      <h1>Web Homepage Css Assignment</h1>
+      <WebCSS />
+      <hr />
+      <footer>
+        <p>&copy; 2023 Salman CSS Projects. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
