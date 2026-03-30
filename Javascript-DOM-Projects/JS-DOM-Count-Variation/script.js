@@ -1,25 +1,43 @@
-const increaseButton = document.querySelector('.counter_button--increase');
-const decreaseButton = document.querySelector('.counter_button--decrease');
-const counterValue = document.querySelector('.counter_value');
-const resetButton = document.querySelector('.reset_button'); // fixed class
+const increaseButton = document.querySelector(".counter__button--increase");
+const decreaseButton = document.querySelector(".counter__button--decrease");
+const counterValue = document.querySelector(".counter__value");
+const resetButton = document.querySelector(".counter__reset-button");
+const counterContainer = document.querySelector(".counter");
 
+function updateCounterState(value) {
+    if (value >= 5) {
+        counterContainer.style.backgroundColor = "red";
+        return;
+    }
 
-increaseButton.addEventListener("click", function () {
-    const currentValue = counterValue.textContent;
-    const currentValueAsNumber = +currentValue;
-    const newValue = currentValueAsNumber + 1;
+    counterContainer.style.backgroundColor = "#bef227";
+}
 
-    counterValue.textContent = newValue;
+resetButton.addEventListener("click", function(){
+    counterValue.textContent = 0;
+    updateCounterState(0);
 });
 
-
-decreaseButton.addEventListener("click", function () {
+decreaseButton.addEventListener("click", function() {
     const currentValue = counterValue.textContent;
     const currentValueAsNumber = +currentValue;
-
-    // prevent negative numbers
-    if (currentValueAsNumber > 0) {
-        const newValue = currentValueAsNumber - 1;
-        counterValue.textContent = newValue;
+    let newValue = currentValueAsNumber - 1 ;
+    if(newValue < 0){
+        newValue = 0;
     }
+    counterValue.textContent = newValue;
+    updateCounterState(newValue);
+});
+
+increaseButton.addEventListener("click", function() {
+    const currentValue = counterValue.textContent;
+    const currentValueAsNumber = +currentValue;
+    let newValue = currentValueAsNumber + 1;
+
+    if (currentValueAsNumber >= 5) {
+        newValue = 5;
+    }
+
+    counterValue.textContent = newValue;
+    updateCounterState(newValue);
 });

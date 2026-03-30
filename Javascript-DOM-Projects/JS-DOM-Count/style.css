@@ -1,101 +1,98 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+    background-image: radial-gradient(ellipse, #385300, #212900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter{
+    background-color: #bef227;
+    width: 476px;
+    height: 615px;
+    border-radius: 12px;
+    box-shadow: 0 25px 12px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.counter__title{
+opacity: 0.5;
+text-transform: uppercase;
+letter-spacing: 1px;
+width: 200px;
+text-align: center;
+line-height: 0.9;
+font-weight: 500;
+font-size: 32px;
+margin-top: 60px;
+}
+.counter__value{
+color: #1d2507;
+font-size: 200px;
+font-weight: 600;
+margin-top: 10px;
+
+
+}
+.counter__reset-button{
+cursor: pointer;
 }
 
-body {
-  font-family: "inter", sans-serif;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: radial-gradient(ellipse, #385300, #212900);
-}
+.counter__reset-icon{
+opacity: 0.3;
+font-size: 35px;
+transition: all 0.4s;
 
-.counter {
-  background-color: #bef277;
-  width: 476px;
-  height: 615px;
-  border-radius: 12px;
-  box-shadow: 0 25px 12px rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
+.counter__reset-button:hover{
+opacity: 0.5;
+}
+.counter__buttons{
+height: 125px;
+width: 100%;
+margin-top: auto;
+background-color: #1d2507;
+/* font-size: 25px; */
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+display: flex;
 
-.counter_title {
-  opacity: 0.6;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  width: 200px;
-  align-items: center;
-  line-height: 0.9;
-  font-weight: 500px;
-  font-size: 32px;
-  margin-top: 60px;
-}
 
-.counter_value {
-  color: #1d2507;
-  font-size: 200px;
-  font-weight: 600;
-  margin-top: 10px;
 }
+.counter__button{
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+transition: all 0.4s;
+}
+.counter__button:hover{
+    background-color: #212b06;
+}
+.counter__button--decrease {
 
-.counter_reset-button {
-  cursor: pointer;
 }
+.counter__icon{
+    color: #bdfe00;
 
-.counter_reset-icon {
-  opacity: 0.3;
-  font-size: 35px;
-  transition: all 0.4s;
 }
+.counter__icon--minus{
 
-.counter_reset-button:hover {
-  opacity: 0.5;
 }
+.counter__button--increase{
+border-left: 1px solid rgba(189, 254, 0, 0.15);
+}
+.counter__icon--plus{
 
-.counter_buttons {
-  background-color: #1d2507;
-  height: 116px;
-  width: 100%;
-  margin-top: auto;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  display: flex;
 }
-
-.counter_button {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: all 0.4s;
-}
-
-.counter_button:hover {
-  background-color: #212b06;
-}
-
-.counter_button--decrease {
-  border-left: 1px solid rgba(198, 254, 0, 0.15);
-}
-.counter_button--increase {
-}
-
-.counter_icon {
-  color: #bdfe00;
-}
-
-.counter_icon--minus {
-}
-
-.counter_icon--plus {
-}
-
-button {
-  all: unset;
+button{
+    all: unset;
 }

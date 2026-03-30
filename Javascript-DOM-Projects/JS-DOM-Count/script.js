@@ -1,25 +1,25 @@
-const increaseButton = document.querySelector('.counter_button--increase');
-const decreaseButton = document.querySelector('.counter_button--decrease');
-const counterValue = document.querySelector('.counter_value');
-const resetButton = document.querySelector('.reset_button'); // fixed class
+const increaseButton = document.querySelector(".counter__button--increase");
+const decreaseButton = document.querySelector(".counter__button--decrease");
+const counterValue = document.querySelector(".counter__value");
+const resetButton = document.querySelector(".counter__reset-button");
 
+resetButton.addEventListener("click", function(){
+    counterValue.textContent = 0;
+});
 
-increaseButton.addEventListener("click", function () {
+decreaseButton.addEventListener("click", function() {
     const currentValue = counterValue.textContent;
     const currentValueAsNumber = +currentValue;
-    const newValue = currentValueAsNumber + 1;
-
+    let newValue = currentValueAsNumber - 1 ;
+    if(newValue < 0){
+        newValue = 0;
+    }
     counterValue.textContent = newValue;
 });
 
-
-decreaseButton.addEventListener("click", function () {
+increaseButton.addEventListener("click", function() {
     const currentValue = counterValue.textContent;
     const currentValueAsNumber = +currentValue;
-
-    // prevent negative numbers
-    if (currentValueAsNumber > 0) {
-        const newValue = currentValueAsNumber - 1;
-        counterValue.textContent = newValue;
-    }
+    const newValue = currentValueAsNumber + 1 ;
+    counterValue.textContent = newValue;
 });
