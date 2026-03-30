@@ -1,0 +1,67 @@
+.resume-page {
+  background-color: rgb(183, 213, 116);
+  font-family: 'Poppins', sans-serif;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.resume-page h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.resume-page h2 {
+  text-align: center;
+  color: rgb(211, 89, 89);
+  margin: 20px 0 10px;
+}
+
+.resume-page h3,
+.resume-page p,
+.resume-page footer,
+.resume-nav {
+  text-align: center;
+}
+
+.resume-nav {
+  margin-bottom: 15px;
+}
+
+.resume-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.profile-image-box {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile-image {
+  width: 180px;
+  border-radius: 10px;
+}
+
+.resume-page ul {
+  width: fit-content;
+  margin: 0 auto 20px;
+}
+
+.resume-page table {
+  background-color: rgb(107, 223, 223);
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.resume-page th,
+.resume-page td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.resume-page hr {
+  margin: 20px 0;
+}

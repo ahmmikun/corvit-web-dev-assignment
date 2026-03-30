@@ -1,0 +1,81 @@
+.registration-page {
+  background-color: blueviolet;
+  color: white;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.registration-page h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.registration-form {
+  background-color: white;
+  color: blueviolet;
+  max-width: 900px;
+  margin: auto;
+  padding: 25px;
+}
+
+.registration-form h2 {
+  margin: 20px 0 10px;
+  text-align: center;
+}
+
+.registration-form label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid blueviolet;
+  margin-bottom: 8px;
+}
+
+.dob-row,
+.radio-row,
+.checkbox-group,
+.form-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.dob-row select {
+  flex: 1;
+}
+
+.radio-row label,
+.checkbox-group label {
+  font-weight: normal;
+}
+
+.registration-form table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.registration-form th,
+.registration-form td {
+  border: 1px solid blueviolet;
+  padding: 8px;
+  text-align: center;
+}
+
+.registration-form button {
+  padding: 10px 18px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
