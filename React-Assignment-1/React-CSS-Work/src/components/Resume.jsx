@@ -15,7 +15,7 @@ export default function Resume() {
 
       <h2>Profile Photo</h2>
       <div className="profile-image-box">
-        <img src="./public/salman.png" alt="My Profile Photo" className="profile-image" />
+        <img src="./salman.png" alt="My Profile Photo" className="profile-image" />
       </div>
 
       <h2>Personal Information</h2>

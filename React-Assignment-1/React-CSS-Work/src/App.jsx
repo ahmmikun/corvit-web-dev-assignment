@@ -4,6 +4,8 @@ import Hobbies from "./components/Hobbies";
 import Contact from "./components/Contact";
 import RegistrationForm from "./components/RegistrationForm";
 import Flags from "./components/Flags";
+import ChessBoard from "./components/ChessBoard";
+import Ludo from "./components/Ludo";
 import "./App.css";
 
 export default function App() {
@@ -18,6 +20,13 @@ export default function App() {
       <RegistrationForm />
       <hr />
       <Flags />
+      <hr />
+      <h1>Chess Board Assignment</h1>
+      <ChessBoard />
+      <hr />
+      <h1>Ludo Board Assignment</h1>
+      <Ludo />
+      <hr />
       
     </div>
   );
