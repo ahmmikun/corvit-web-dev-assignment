@@ -6,6 +6,7 @@ import PeriodicTable from "./components/PeriodicTable";
 import CheeseTable from "./components/CheeseTable";
 import RegistrationForm from "./components/RegisterForm";
 import StudentRegistrationForm from "./components/StudentRegistrationForm";
+import Cv from "./components/Cv";
 
 function App() {
   return (
@@ -34,6 +35,11 @@ function App() {
       <h1>HTML Assignment 8</h1>
       <StudentRegistrationForm />
       <hr />
+      <h1>HTML Assignment 9</h1>
+      <Cv />
+      <hr />
+
+      
     </div>
   );
 }

@@ -7,6 +7,8 @@ import Flags from "./components/Flags";
 import ChessBoard from "./components/ChessBoard";
 import Ludo from "./components/Ludo";
 import WebCSS from "./components/WebCSS";
+import Snake from "./components/Snake";
+
 import "./App.css";
 
 export default function App() {
@@ -31,6 +33,9 @@ export default function App() {
       <hr />
       <h1>Web Homepage Css Assignment</h1>
       <WebCSS />
+      <hr />
+      <h1>Snake & Ladder Game Assignment</h1>
+      <Snake />
       <hr />
       <footer>
         <p>&copy; 2023 Salman CSS Projects. All rights reserved.</p>
