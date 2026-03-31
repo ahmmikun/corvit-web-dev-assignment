@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.credit-card-wrapper * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.credit-card-wrapper {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e3f2fd;
+}
+
+.credit-card-wrapper header,
+.credit-card-wrapper .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.credit-card-wrapper .container {
+  background-image: url("/images/bg.png");
+  background-size: cover;
+  position: relative;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 28px;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.credit-card-wrapper h5 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.credit-card-wrapper .logo img {
+  width: 48px;
+  margin-right: 10px;
+}
+.credit-card-wrapper header .chip {
+  width: 60px;
+}
+.credit-card-wrapper h6 {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+}
+.credit-card-wrapper h5.number {
+  margin-top: 4px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.credit-card-wrapper h5.name {
+  margin-top: 20px;
+}
+.credit-card-wrapper .container .card-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  align-items: flex-end;
+}
