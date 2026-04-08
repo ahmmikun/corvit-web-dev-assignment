@@ -1,79 +1,69 @@
 import { createContext, useState } from "react";
-const MyContext = createContext();
 import { ToastContainer, toast } from "react-toastify";
 
+const MyContext = createContext();
+
 const MyProvider = (props) => {
-    const [stage, setStage] = useState(1);
-    const [players, setPlayers] = useState([]);
-    const [result, setResult] = useState(``)
-    const addPlayerHandler = (name) => {
-        setPlayers([prevState => ({
-            ...prevState,
-            name:name
-        })]);
-    };
+  const [stage, setStage] = useState(1);
+  const [players, setPlayers] = useState([]);
+  const [result, setResult] = useState("");
 
-    const removePlayerHndler = (idx) => {
-        let newArray = [...players];
-        newArray.splice(idx, 1);
-        setPlayers(newArray); 
-    };
+  const addPlayerHandler = (name) => {
+    setPlayers((prevState) => [...prevState, name]);
+  };
 
-    const nextHandlerv = () => {
-        if(players.length < 2)
-        {
-            toast.error("At least 2 players are required to proceed.", {
-                position: "top-left",
-                autoClose: 5000,
-                hideProgressBar: false,
-            });
+  const removePlayerHandler = (idx) => {
+    setPlayers((prevState) => prevState.filter((_, index) => index !== idx));
+  };
 
-        }
-        else{
-            //next
-            setStage(2);
-            setTimeout(()=>{
- generateLosers();
-            },2000);
-     
-        }
+  const generateLoser = () => {
+    const loser = players[Math.floor(Math.random() * players.length)];
+    setResult(loser);
+  };
 
+  const nextHandler = () => {
+    if (players.length < 2) {
+      toast.error("At least 2 players are required to proceed.", {
+        position: "top-left",
+        autoClose: 5000,
+        hideProgressBar: false,
+      });
+    } else {
+      setStage(2);
+      setTimeout(() => {
+        generateLoser();
+      }, 2000);
     }
-    const generateLosers =  ()=> {
-        let result = players[Math.floor(Math.random()*players.length)];
-        setResult(result);
-    }
+  };
 
-    const resetGameHandler = () => {
-        setStage(1);
-        setPlayers([]);
-        setResult(``);
-    }
+  const resetGameHandler = () => {
+    setStage(1);
+    setPlayers([]);
+    setResult("");
+  };
 
-    return(
-        <>
-        <MyContext.Provider value={{
-            //state
-            stage:stage,
-            players:players,
-            result:result,
-            //methods
-            addPlayer:addPlayerHandler,
-            removePlayer:removePlayerHndler,
-            next:nextHandler,
-            generateNewLoser:generateLosers,
-            resetGame:resetGameHandler
-
-        }}>
-            {props.children}
-
-        </MyContext.Provider>
-        <ToastContainer />
-        </>
-    )
-}
+  return (
+    <>
+      <MyContext.Provider
+        value={{
+          stage,
+          players,
+          result,
+          addPlayer: addPlayerHandler,
+          removePlayer: removePlayerHandler,
+          next: nextHandler,
+          generateNewLoser: generateLoser,
+          resetGame: resetGameHandler,
+        }}
+      >
+        {props.children}
+      </MyContext.Provider>
+      <ToastContainer />
+    </>
+  );
+};
 
 export {
-    MyContext,
-    MyProvider
-}
+  MyContext,
+  MyProvider,
+};
